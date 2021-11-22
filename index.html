@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>To Do List</title>
+  <link rel="stylesheet" href="./dist/css/style.min.css">
+</head>
+
+<body>
+<div class="wrapper">
+  <header class="header">
+    <a href="#">
+      <img class="header__logo" src="./dist/images/logo.jpg" alt="Logo">
+    </a>
+  </header>
+  <aside class="categories">
+    <h3 class="categories__title">
+      Категории
+    </h3>
+    <nav>
+      <ul class="categories__list">
+        <li class="categories__item _active">
+          <a class="categories__link" href="#">
+            Срочное
+          </a>
+        </li>
+        <li class="categories__item">
+          <a class="categories__link" href="#">
+            Важное
+          </a>
+        </li>
+        <li class="categories__item">
+          <a class="categories__link" href="#">
+            Личное
+          </a>
+        </li>
+        <li class="categories__item">
+          <a class="categories__link" href="#">
+            Работа
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+  <main class="main">
+    <section class="todo">
+      <h1 class="todo__title-category">
+        Категория:
+      </h1>
+      <h2 class="todo__title">
+        Список задач
+      </h2>
+      <label class="custom-checkbox">
+        <input class="custom-checkbox__input" type="checkbox" name="checkbox1"/>
+        <span class="custom-checkbox__text">
+          Купить
+        </span>
+      </label>
+      <label class="custom-checkbox">
+        <input class="custom-checkbox__input" type="checkbox" name="checkbox2"/>
+        <span class="custom-checkbox__text">
+          Сделать
+        </span>
+      </label>
+      <label class="custom-checkbox">
+        <input class="custom-checkbox__input" type="checkbox" name="checkbox3"/>
+        <span class="custom-checkbox__text">
+          Позвонить
+        </span>
+      </label>
+        <label class="todo__new-item">
+          <input class="todo__new-input" placeholder="Добавить новую задачу" autofocus>
+          <span>Добавить новую задачу</span>
+        </label>
+        <button class="todo__add-btn" type="button">Добавить</button>
+    </section>
+  </main>
+  <footer class="footer">
+
+  </footer>
+</div>
+
+<script src="dist/js/main.min.js"></script>
+</body>
+</html>
