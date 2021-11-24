@@ -124,8 +124,7 @@ body {
 .custom-checkbox__input:checked + .custom-checkbox__text {
   text-decoration: line-through;
   color: #b3b3b3;
-  font-weight: 600;
-  background-color: #f7f7f7; }
+  font-weight: 600; }
 .custom-checkbox__input:checked:hover {
   box-shadow: 0 0 0 3px #d9d9d9;
   border-color: #666666; }
@@ -149,14 +148,37 @@ body {
   border: none;
   width: 100%;
   padding: 10px 0;
-  margin-top: 20px; }
+  margin-top: 15px; }
   .todo__new-input::placeholder {
     opacity: 0; }
 
 .todo__new-item:focus-within > span,
 .todo__new-input:not(:placeholder-shown) + span {
-  color: purple;
+  color: #808080;
   transform: translateY(0px); }
+
+.todo__add-btn {
+  margin: 0 auto;
+  width: 120px;
+  height: 36px;
+  border: 2px solid #6a6a6a;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: block; }
+  .todo__add-btn:after {
+    position: absolute;
+    content: "";
+    top: 3px;
+    left: 6px;
+    width: 90%;
+    height: 80%;
+    border: 1px solid #6a6a6a;
+    opacity: 0;
+    transition: all 0.3s ease; }
+  .todo__add-btn:hover:after {
+    opacity: 1; }
 
 .categories {
   position: fixed;
@@ -198,7 +220,7 @@ body {
     border-radius: 2px; }
   .todo__container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 15px; }
   .todo__card {
@@ -206,7 +228,7 @@ body {
     flex-direction: column;
     justify-content: center;
     padding: 15px;
-    margin: 6px;
+    margin: 15px 6px;
     flex-basis: 270px;
     border: 1px solid grey;
     background: #fff; }
@@ -217,9 +239,8 @@ body {
     border-bottom: 1px solid #ddd;
     border-radius: 2px;
     padding: 10px 0;
+    margin-bottom: 10px;
     font-size: 1.2em; }
-  .todo__list {
-    margin: 10px 0; }
 
 .todo__title-category {
   text-align: center; }

@@ -70,7 +70,6 @@
   text-decoration: line-through;
   color: hsl(0, 0%, 70%);
   font-weight: 600;
-  background-color: hsl(0, 0%, 97%);
 }
 
   &:hover {
@@ -100,7 +99,7 @@ outline:none;
 border:none;
   width:100%;
   padding: 10px 0;
-  margin-top: 20px;
+  margin-top: 15px;
 
   &::placeholder {
     opacity: 0;
@@ -109,6 +108,34 @@ border:none;
 
 .todo__new-item:focus-within > span,
 .todo__new-input:not(:placeholder-shown) + span{
-  color:purple;
+  color: #808080;
   transform:translateY(0px);
+}
+
+.todo__add-btn {
+  margin: 0 auto;
+  width: 120px;
+  height: 36px;
+  border: 2px solid #6a6a6a;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: block;
+
+  &:after {
+    position: absolute;
+    content: "";
+    top: 3px;
+    left: 6px;
+    width: 90%;
+    height: 80%;
+    border: 1px solid #6a6a6a;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  &:hover:after {
+    opacity: 1;
+  }
 }
