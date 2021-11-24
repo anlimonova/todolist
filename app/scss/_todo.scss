@@ -1,0 +1,90 @@
+.todo {
+  width: 100%;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 250px;
+    padding: 10px;
+    border-bottom: 2px solid grey;
+    border-radius: 2px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 15px;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 15px;
+    margin: 5px;
+    flex-basis: 230px;
+    border: 1px solid grey;
+    background: #fff;
+  }
+
+  &__title {
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 10px 0;
+    font-size: 1.2em;
+  }
+
+  &__list {
+    margin: 10px 0;
+  }
+}
+
+.todo__title-category {
+  text-align: center;
+
+  & + span {
+    font-weight: bold;
+    font-size: 1.5em;;
+  }
+}
+
+.todo__add-card {
+  border: 2px solid lightgrey;
+  background-color: #fff;
+  font-size: 12px;
+  height: 2.5em;
+  width: 2.5em;
+  border-radius: 999px;
+  position: relative;
+  justify-self: flex-end;
+  cursor: pointer;
+  transition: background .5s;
+
+  &:after,
+  &:before {
+    content: "";
+    display: block;
+    background-color: grey;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &:before {
+    height: 1em;
+    width: 0.2em;
+  }
+
+  &:after {
+    height: 0.2em;
+    width: 1em;
+  }
+
+  &:hover {
+    background: #ececec;
+  }
+}
+

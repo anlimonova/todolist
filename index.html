@@ -19,73 +19,241 @@
     </a>
   </header>
   <aside class="categories">
-    <h3 class="categories__title">
-      Категории
-    </h3>
-    <nav>
-      <ul class="categories__list">
-        <li class="categories__item _active">
-          <a class="categories__link" href="#">
-            Срочное
-          </a>
-        </li>
-        <li class="categories__item">
-          <a class="categories__link" href="#">
-            Важное
-          </a>
-        </li>
-        <li class="categories__item">
-          <a class="categories__link" href="#">
-            Личное
-          </a>
-        </li>
-        <li class="categories__item">
-          <a class="categories__link" href="#">
-            Работа
-          </a>
-        </li>
-      </ul>
-    </nav>
+      <h3 class="categories__title">
+        Категории
+      </h3>
+      <nav>
+        <ul class="categories__list">
+          <li class="categories__item _active">
+            <a class="categories__link" href="#">
+              Срочное
+            </a>
+          </li>
+          <li class="categories__item">
+            <a class="categories__link" href="#">
+              Важное
+            </a>
+          </li>
+          <li class="categories__item">
+            <a class="categories__link" href="#">
+              Личное
+            </a>
+          </li>
+          <li class="categories__item">
+            <a class="categories__link" href="#">
+              Работа
+            </a>
+          </li>
+        </ul>
+      </nav>
   </aside>
   <main class="main">
     <section class="todo">
-      <h1 class="todo__title-category">
-        Категория:
-      </h1>
-      <h2 class="todo__title">
-        Список задач
-      </h2>
-      <ul class="todo__list">
-        <li>
-          <label class="custom-checkbox">
-            <input class="custom-checkbox__input" type="checkbox" name="checkbox1"/>
-            <span class="custom-checkbox__text">
-              Купить
-            </span>
+      <div class="todo__header">
+        <h1 class="todo__title-category">
+          Категория:&nbsp;
+          <span>срочное</span>
+        </h1>
+       <button class="todo__add-card"></button>
+      </div>
+      <div class="todo__container">
+        <div class="todo__card">
+          <h2 class="todo__title">
+            Для мамы
+          </h2>
+          <ul class="todo__list">
+            <li>
+              <label class="custom-checkbox">
+                <input class="custom-checkbox__input" type="checkbox" name="checkbox1"/>
+                <span class="custom-checkbox__text">
+                  Купить
+                </span>
+              </label>
+            </li>
+            <li>
+              <label class="custom-checkbox">
+                <input class="custom-checkbox__input" type="checkbox" name="checkbox2"/>
+                <span class="custom-checkbox__text">
+                  Сделать
+                </span>
+              </label>
+            </li>
+            <li>
+              <label class="custom-checkbox">
+                <input class="custom-checkbox__input" type="checkbox" name="checkbox3"/>
+                <span class="custom-checkbox__text">
+                  Позвонить
+                </span>
+              </label>
+            </li>
+          </ul>
+          <label class="todo__new-item">
+            <input class="todo__new-input" placeholder="Добавить новую задачу" autofocus>
+            <span>Добавить новую задачу</span>
           </label>
-        </li>
-        <li>
-          <label class="custom-checkbox">
-            <input class="custom-checkbox__input" type="checkbox" name="checkbox2"/>
-            <span class="custom-checkbox__text">
-              Сделать
-            </span>
+          <button class="todo__add-task" type="button">Добавить</button>
+        </div>
+        <div class="todo__card">
+          <h2 class="todo__title">
+            К ДР
+          </h2>
+          <ul class="todo__list">
+            <li>
+              <label class="custom-checkbox">
+                <input class="custom-checkbox__input" type="checkbox" name="checkbox1"/>
+                <span class="custom-checkbox__text">
+                  Поесть
+                </span>
+              </label>
+            </li>
+            <li>
+              <label class="custom-checkbox">
+                <input class="custom-checkbox__input" type="checkbox" name="checkbox2"/>
+                <span class="custom-checkbox__text">
+                  Попить
+                </span>
+              </label>
+            </li>
+          </ul>
+          <label class="todo__new-item">
+            <input class="todo__new-input" placeholder="Добавить новую задачу" autofocus>
+            <span>Добавить новую задачу</span>
           </label>
-        </li>
-        <li>
-          <label class="custom-checkbox">
-            <input class="custom-checkbox__input" type="checkbox" name="checkbox3"/>
-            <span class="custom-checkbox__text">
-              Позвонить
-            </span>
+          <button class="todo__add-btn" type="button">Добавить</button>
+        </div>
+        <div class="todo__card">
+          <h2 class="todo__title">
+            На встрече
+          </h2>
+          <ul class="todo__list">
+            <li>
+              <label class="custom-checkbox">
+                <input class="custom-checkbox__input" type="checkbox" name="checkbox1"/>
+                <span class="custom-checkbox__text">
+                  Принести
+                </span>
+              </label>
+            </li>
+            <li>
+              <label class="custom-checkbox">
+                <input class="custom-checkbox__input" type="checkbox" name="checkbox2"/>
+                <span class="custom-checkbox__text">
+                  Подать
+                </span>
+              </label>
+            </li>
+            <li>
+              <label class="custom-checkbox">
+                <input class="custom-checkbox__input" type="checkbox" name="checkbox3"/>
+                <span class="custom-checkbox__text">
+                  Отойти
+                </span>
+              </label>
+            </li>
+            <li>
+              <label class="custom-checkbox">
+                <input class="custom-checkbox__input" type="checkbox" name="checkbox3"/>
+                <span class="custom-checkbox__text">
+                  Не мешать
+                </span>
+              </label>
+            </li>
+          </ul>
+          <label class="todo__new-item">
+            <input class="todo__new-input" placeholder="Добавить новую задачу" autofocus>
+            <span>Добавить новую задачу</span>
           </label>
-        </li>
-      </ul>
-        <label class="todo__new-item">
-          <input class="todo__new-input" placeholder="Добавить новую задачу" autofocus>
-          <span>Добавить новую задачу</span>
-        </label>
-        <button class="todo__add-btn" type="button">Добавить</button>
+          <button class="todo__add-btn" type="button">Добавить</button>
+        </div>
+        <div class="todo__card">
+          <h2 class="todo__title">
+            На встрече
+          </h2>
+          <ul class="todo__list">
+            <li>
+              <label class="custom-checkbox">
+                <input class="custom-checkbox__input" type="checkbox" name="checkbox1"/>
+                <span class="custom-checkbox__text">
+                  Принести
+                </span>
+              </label>
+            </li>
+            <li>
+              <label class="custom-checkbox">
+                <input class="custom-checkbox__input" type="checkbox" name="checkbox2"/>
+                <span class="custom-checkbox__text">
+                  Подать
+                </span>
+              </label>
+            </li>
+            <li>
+              <label class="custom-checkbox">
+                <input class="custom-checkbox__input" type="checkbox" name="checkbox3"/>
+                <span class="custom-checkbox__text">
+                  Отойти
+                </span>
+              </label>
+            </li>
+            <li>
+              <label class="custom-checkbox">
+                <input class="custom-checkbox__input" type="checkbox" name="checkbox3"/>
+                <span class="custom-checkbox__text">
+                  Не мешать
+                </span>
+              </label>
+            </li>
+          </ul>
+          <label class="todo__new-item">
+            <input class="todo__new-input" placeholder="Добавить новую задачу" autofocus>
+            <span>Добавить новую задачу</span>
+          </label>
+          <button class="todo__add-btn" type="button">Добавить</button>
+        </div>
+        <div class="todo__card">
+          <h2 class="todo__title">
+            На встрече
+          </h2>
+          <ul class="todo__list">
+            <li>
+              <label class="custom-checkbox">
+                <input class="custom-checkbox__input" type="checkbox" name="checkbox1"/>
+                <span class="custom-checkbox__text">
+                  Принести
+                </span>
+              </label>
+            </li>
+            <li>
+              <label class="custom-checkbox">
+                <input class="custom-checkbox__input" type="checkbox" name="checkbox2"/>
+                <span class="custom-checkbox__text">
+                  Подать
+                </span>
+              </label>
+            </li>
+            <li>
+              <label class="custom-checkbox">
+                <input class="custom-checkbox__input" type="checkbox" name="checkbox3"/>
+                <span class="custom-checkbox__text">
+                  Отойти
+                </span>
+              </label>
+            </li>
+            <li>
+              <label class="custom-checkbox">
+                <input class="custom-checkbox__input" type="checkbox" name="checkbox3"/>
+                <span class="custom-checkbox__text">
+                  Не мешать
+                </span>
+              </label>
+            </li>
+          </ul>
+          <label class="todo__new-item">
+            <input class="todo__new-input" placeholder="Добавить новую задачу" autofocus>
+            <span>Добавить новую задачу</span>
+          </label>
+          <button class="todo__add-btn" type="button">Добавить</button>
+        </div>
+      </div>
     </section>
   </main>
   <footer class="footer">
