@@ -9,19 +9,41 @@
   overflow-y: auto;
   background-color: #fafafa;
   border: 1px solid grey;
+
   &__title {
     margin-bottom: 16px;
     font-size: 22px;
     font-weight: 700;
     line-height: 25px;
   }
+
   &__item {
     padding: 8px;
     border-radius: 5px;
     transition: background .5s;
   }
+
   &__link {
     color: inherit;
+    position: relative;
+    cursor: pointer;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 0;
+      height: 1px;
+      width: 100%;
+      background: currentColor;
+      transform: scale3d(0, 1, 1);
+      transition: transform 0.3s;
+      transform-origin: 100% 50%;
+      pointer-events: none;
+    }
+    &:hover::before {
+      transform-origin: 0% 50%;
+      transform: scale3d(1, 1, 1);
+    }
   }
 }
 

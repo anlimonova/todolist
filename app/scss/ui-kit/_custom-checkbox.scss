@@ -26,6 +26,28 @@
   }
 }
 
+.custom-checkbox__text {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    transform-origin: 100% 100%;
+    transform: scale3d(0, 1, 1);
+    transition: transform .3s;
+  }
+
+  &:hover::before {
+    transform-origin: 0 100%;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
 .custom-checkbox__input {
   -webkit-appearance: none;
   width: 1.25rem;
@@ -38,6 +60,7 @@
   left: 0;
   outline: none;
   cursor: pointer;
+  transition: box-shadow .3s;
 
   &::after {
     content: "";
